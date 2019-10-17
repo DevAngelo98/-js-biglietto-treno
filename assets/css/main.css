@@ -51,7 +51,11 @@
   height: 38px;
 }
 
-.all_ticket img {
+#all_ticket {
+  display: none;
+}
+
+#all_ticket img {
   width: 270px;
 }
 
@@ -62,5 +66,5 @@
 
 label{
   color: white;
-  font-weight: bold;  
+  font-weight: bold; 
 }
