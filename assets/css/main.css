@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
+#padd {
+  padding: 40px;
+}
+
 .all {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
 }
 
 .container_software{
@@ -47,7 +50,7 @@
   flex-direction: column;
 }
 
-#form_prezzo{
+.form_dimensione{
   height: 38px;
 }
 

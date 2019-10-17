@@ -10,31 +10,36 @@
   <title>Biglietto Treno</title>
 </head>
 <body>
-  <div class="container-fluid all">
+  <div class="container-fluid all" id="padd">
     <div class="row container_software">
-      <div class="col-md-5 software" id="first_compra">
+      <div class="col-md-10 col-xl-7 software" id="first_compra">
         <div class="header">
             <img src="assets/img/logo-trenitalia.svg" alt="logo-trenitalia">
         </div>
         <button type="button" class="btn btn-danger" id="compra" onclick="change()">Compra un biglietto</button>
       </div>
-      <div class="col-md-5 software" id="all_ticket">
+      <div class="col-md-10 col-xl-7 software" id="all_ticket">
           <div class="header">
               <img src="assets/img/logo-trenitalia.svg" alt="logo-trenitalia">
           </div>
           <div class="container-fluid ticket">
               <div class="row my_form">
                   <div class="form-group col-sm-7">
-                    <label for="formNome">Inserisci il numero di chilometri:</label>
+                    <label for="form_chilometri">Inserisci il numero di chilometri:</label>
                     <input type="text" class="form-control" id="form_chilometri" placeholder="Chilometri">
                   </div>
                   <div class="form-group col-sm-7">
-                    <label for="formCognome">Inserisci la tua età:</label>
+                    <label for="form_eta">Inserisci la tua età:</label>
                     <input type="text" class="form-control" id="form_eta" placeholder="Età">
+                  </div>
+                  <div class="form-group col-sm-7">
+                    <label for="form_sconto">Sconto applicabile:</label>
+                    <output type="text" class="form-control form_dimensione" id="form_sconto" placeholder="Possibile sconto">
+                    </output>                  
                   </div>
                   <div class="form-group col-sm-7 generatore_prezzo">
                     <button type="button" onclick="generator()" class="btn btn-danger">Calcola prezzo</button>
-                    <output class="form-control" id="form_prezzo">
+                    <output class="form-control form_dimensione" id="form_prezzo">
                     </output>
                   </div>
                 </div>
