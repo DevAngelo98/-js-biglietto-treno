@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Biglietto Treno</title>
+</head>
+<body>
+  <div class="container-fluid all">
+    <div class="row container_software">
+      <div class="col-md-5 software">
+        <div class="header">
+            <img src="assets/img/logo-trenitalia.svg" alt="logo-trenitalia">
+        </div>
+        <button type="button" class="btn btn-danger" id="compra">Compra un biglietto</button>
+      </div>
+      <div class="col-md-5 software all_ticket">
+          <div class="header">
+              <img src="assets/img/logo-trenitalia.svg" alt="logo-trenitalia">
+          </div>
+          <div class="container-fluid ticket">
+              <div class="row my_form">
+                  <div class="form-group col-sm-7">
+                    <label for="formNome">Inserisci il numero di chilometri:</label>
+                    <input type="text" class="form-control" id="form_chilometri" placeholder="Chilometri">
+                  </div>
+                  <div class="form-group col-sm-7">
+                    <label for="formCognome">Inserisci la tua età:</label>
+                    <input type="text" class="form-control" id="form_eta" placeholder="Età">
+                  </div>
+                  <div class="form-group col-sm-7 generatore_prezzo">
+                    <button type="button" onclick="generator()" class="btn btn-danger">Calcola prezzo</button>
+                    <output class="form-control" id="form_prezzo">
+                    </output>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
