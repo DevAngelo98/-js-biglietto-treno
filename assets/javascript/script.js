@@ -18,7 +18,7 @@ function generator(){
 
   // Dichiaro tutte le variabili
   var chilometri = document.getElementById("form_chilometri").value;
-  var eta = parseInt(document.getElementById("form_eta").value);
+  var eta = document.getElementById("form_eta").value;
   var prezzo = 0.21 * chilometri;
   var prezzoFinale;
 
